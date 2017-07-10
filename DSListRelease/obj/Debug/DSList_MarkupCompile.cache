@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-C:\Samples\DSList\DSList\DSListRelease\obj\Debug\
+C:\Samples\DSList\DSList\Repos\DSListRelease\DSListRelease\obj\Debug\
 DSList
 none
 false
 DEBUG;TRACE
-C:\Samples\DSList\DSList\DSListRelease\App.xaml
+C:\Samples\DSList\DSList\Repos\DSListRelease\DSListRelease\App.xaml
 14147124481
 52-499815464
 90-899276734
-46-353318092
+109346947447
 Access.xaml;AnimatedSplashScreenWindow.xaml;DictionaryResApp.xaml;EnterIPWindow.xaml;ErrorToaster.xaml;NewMainWindow.xaml;OpenSourceControls\SmallColorPicker.xaml;Resources\Icons.xaml;Resources\IconsNonShared.xaml;SettingsWindow.xaml;SuccessToaster.xaml;OpenSourceControls\UserControlListViewHosts.xaml;WarningToaster.xaml;Windows\SSHReportWindow.xaml;
 
 False
