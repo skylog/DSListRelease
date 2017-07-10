@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<local:SmallColorPicker x:Name="ThisColorPicker" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:local="clr-namespace:DSList.OpenSourceControls;assembly=DSList" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <local:SmallColorPicker.Resources>
+    <ResourceDictionary>
+      <local:ColorToBrushConverter x:Key="ColorToBrushConverter" />
+    </ResourceDictionary>
+  </local:SmallColorPicker.Resources>
+  <ComboBox Name="Picker" SnapsToDevicePixels="True" SelectedValue="{Binding ElementName=ThisColorPicker, Path=SelectedColor}">
+    <ComboBox.ItemTemplate>
+      <DataTemplate>
+        <Rectangle Width="16" Height="16" HorizontalAlignment="Center" Margin="0 1 0 1" Fill="{Binding Converter={StaticResource ColorToBrushConverter}}" />
+      </DataTemplate>
+    </ComboBox.ItemTemplate>
+    <ComboBox.ItemsPanel>
+      <ItemsPanelTemplate>
+        <WrapPanel Width="111" Margin="0 2 0 2" />
+      </ItemsPanelTemplate>
+    </ComboBox.ItemsPanel>
+  </ComboBox>
+</local:SmallColorPicker>

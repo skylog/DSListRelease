@@ -1,0 +1,77 @@
+﻿<UserControl x:Class="DSList.OpenSourceControls.UserControlListViewHosts"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:DSList.OpenSourceControls"
+             xmlns:sys="clr-namespace:System;assembly=mscorlib"
+             mc:Ignorable="d" 
+             >
+
+    <UserControl.Resources>
+        <local:ColorToBrushConverter x:Key="ColorToBrushConverter"/>
+    </UserControl.Resources>
+
+    <ListView Name="ListViewIP" 
+              Control.Foreground="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}" 
+              FrameworkElement.Margin="5,5,0,5" 
+              Control.TabIndex="1" 
+              Control.IsTabStop="True" 
+              ListBox.SelectionMode="Single" 
+              
+              VirtualizingPanel.IsVirtualizingWhenGrouping="True" 
+              ItemsControl.ItemsSource="{Binding IPArray}">
+        <FrameworkElement.Resources>
+            <ResourceDictionary>
+                <Style Style.TargetType="{x:Type TextBlock}">
+                    <Setter Setter.Property="TextBlock.TextTrimming" Setter.Value="CharacterEllipsis" />
+                </Style>
+            </ResourceDictionary>
+        </FrameworkElement.Resources>
+        <FrameworkElement.FocusVisualStyle>
+            <Style />
+        </FrameworkElement.FocusVisualStyle>
+        <ListView.View>
+            <GridView GridView.AllowsColumnReorder="False">
+                <GridViewColumn GridViewColumn.Header="Наименование" GridViewColumn.Width="140" GridViewColumn.DisplayMemberBinding="{Binding Path=Type}" />
+                <GridViewColumn GridViewColumn.Header="IP адрес" GridViewColumn.Width="100" GridViewColumn.DisplayMemberBinding="{Binding Path=IPAddress}" />
+                <GridViewColumn GridViewColumn.Header="Имя ПК" GridViewColumn.Width="100" GridViewColumn.DisplayMemberBinding="{Binding Path=NetbiosName}" />
+                <GridViewColumn GridViewColumn.Header="Пинг" GridViewColumn.Width="50" GridViewColumn.DisplayMemberBinding="{Binding Path=Latency,StringFormat=0.;;#}" />
+            </GridView>
+        </ListView.View>
+        <ItemsControl.ItemContainerStyle>
+            <Style Style.TargetType="{x:Type ListViewItem}">
+                <Style.Triggers>
+                    <Trigger Trigger.Property="UIElement.IsMouseOver" Trigger.Value="True">
+                        <Setter Setter.Property="FrameworkElement.ToolTip" Setter.Value="{Binding Tooltip}" />
+                    </Trigger>
+                    <MultiDataTrigger>
+                        <MultiDataTrigger.Conditions>
+                            <Condition Condition.Value="{x:Static sys:String.Empty}" Condition.Binding="{Binding NetbiosName}" />
+                            <Condition Condition.Binding="{Binding Latency}" Condition.Value="-" />
+                            <Condition Binding="{Binding Owner.HideOffline.IsChecked}" Condition.Value="True" />
+                        </MultiDataTrigger.Conditions>
+                        <Setter Setter.Property="UIElement.Visibility" Setter.Value="Collapsed" />
+                    </MultiDataTrigger>
+                    <MultiDataTrigger>
+                        <MultiDataTrigger.Conditions>
+                            <Condition Condition.Binding="{Binding NetbiosName}" Condition.Value="False" />
+                            <Condition Condition.Binding="{Binding Latency}" Condition.Value="-" />
+                        </MultiDataTrigger.Conditions>
+                        <Setter Setter.Property="Control.Background" Setter.Value="#FFFFC0CB" />
+                    </MultiDataTrigger>
+                </Style.Triggers>
+            </Style>
+        </ItemsControl.ItemContainerStyle>
+        <ItemsControl.GroupStyle>
+            <GroupStyle>
+                <GroupStyle.HeaderTemplate>
+                    <DataTemplate>
+                        <TextBlock TextBlock.FontWeight="Bold" TextBlock.FontSize="12" TextBlock.Foreground="{DynamicResource {x:Static SystemColors.HotTrackBrushKey}}" TextBlock.Text="{Binding Name}" />
+                    </DataTemplate>
+                </GroupStyle.HeaderTemplate>
+            </GroupStyle>
+        </ItemsControl.GroupStyle>
+    </ListView>
+
+</UserControl>

@@ -1,0 +1,837 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A4FCD89E-907C-4C93-9EF0-705C5166F330}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DSList</RootNamespace>
+    <AssemblyName>DSList</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>\\Vmwindows7pro\общая\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Unc</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>10</UpdateInterval>
+    <UpdateIntervalUnits>Hours</UpdateIntervalUnits>
+    <UpdatePeriodically>true</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <InstallUrl>\\Vmwindows7pro\общая\</InstallUrl>
+    <UpdateUrl>\\nas.dengisrazy.ru\it\DSList\Install\</UpdateUrl>
+    <ProductName>DSList</ProductName>
+    <PublisherName>afedorenko</PublisherName>
+    <SuiteName>DSList</SuiteName>
+    <MinimumRequiredVersion>0.0.0.1</MinimumRequiredVersion>
+    <ApplicationRevision>78</ApplicationRevision>
+    <ApplicationVersion>0.1.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Resources\vsnetwebservicedynamicdiscovery_8215.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Win32Resource>
+    </Win32Resource>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>D46D62032D91343A0B46B73CE07683696A51A497</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>DSList_1_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AngleSharp, Version=0.9.9.0, Culture=neutral, PublicKeyToken=e83494dcdc6d31ea, processorArchitecture=MSIL">
+      <HintPath>packages\AngleSharp.0.9.9\lib\net45\AngleSharp.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Carbon.Data.Protection, Version=0.8.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\Carbon.Data.Protection.0.8.1\lib\net451\Carbon.Data.Protection.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Carbon.Json, Version=1.4.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\Carbon.Json.1.4.1\lib\net461\Carbon.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Carbon.Packaging, Version=1.7.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\Carbon.Packaging.1.7.3\lib\net461\Carbon.Packaging.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Carbon.Storage, Version=1.5.4.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\Carbon.Storage.1.6.0\lib\net451\Carbon.Storage.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Carbon.VersionControl, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\Carbon.VersionControl.1.1.0\lib\net451\Carbon.VersionControl.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Carbon.Versioning, Version=1.2.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\Carbon.Versioning.1.2.0\lib\net451\Carbon.Versioning.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Cassia, Version=2.0.0.60, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\Cassia.2.0.0.60\lib\2.0\Cassia.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ControlzEx, Version=2.1.1.3, Culture=neutral, PublicKeyToken=f08b075e934b7045, processorArchitecture=MSIL">
+      <HintPath>packages\ControlzEx.2.1.1.3\lib\net45\ControlzEx.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="CustomMarshalers" />
+    <Reference Include="Fluent, Version=5.0.1.10, Culture=neutral, PublicKeyToken=3e436e32a8c5546f, processorArchitecture=MSIL">
+      <HintPath>packages\Fluent.Ribbon.5.0.1.10\lib\net45\Fluent.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="GitHub, Version=1.5.4.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\GitHub.1.5.4\lib\net461\GitHub.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MahApps.Metro, Version=1.5.0.23, Culture=neutral, PublicKeyToken=f4fb5a3c4d1e5b4f, processorArchitecture=MSIL">
+      <HintPath>packages\MahApps.Metro.1.5.0\lib\net45\MahApps.Metro.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Windows.Shell, Version=3.5.41019.1, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Data, Version=6.8.8.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>packages\MySql.Data.6.8.8\lib\net45\MySql.Data.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="PresentationCore, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="PresentationFramework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="PresentationFramework.Classic" />
+    <Reference Include="protobuf-net, Version=2.2.1.0, Culture=neutral, PublicKeyToken=257b51d87d2e4d67, processorArchitecture=MSIL">
+      <HintPath>packages\protobuf-net.2.2.1\lib\net40\protobuf-net.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Renci.SshNet, Version=2016.0.0.0, Culture=neutral, PublicKeyToken=1cee9f8bde3db106, processorArchitecture=MSIL">
+      <HintPath>packages\SSH.NET.2016.0.0\lib\net40\Renci.SshNet.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="RibbonControlsLibrary, Version=3.5.41019.1, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.DirectoryServices.AccountManagement" />
+    <Reference Include="System.DirectoryServices.Protocols" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.IO.Compression.FileSystem" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.Security, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Text.Encodings.Web, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Text.Encodings.Web.4.3.1\lib\netstandard1.0\System.Text.Encodings.Web.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.1.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Threading.Tasks.Extensions.4.3.0\lib\portable-net45+win8+wp8+wpa81\System.Threading.Tasks.Extensions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Windows" />
+    <Reference Include="System.Windows.Controls.Ribbon" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Interactivity, Version=4.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\ControlzEx.2.1.1.3\lib\net45\System.Windows.Interactivity.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="TaskDialog, Version=1.7.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\WPFTaskDialog.1.7.1\lib\net40-Client\TaskDialog.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="UIAutomationProvider, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="UIAutomationTypes, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="Access.xaml.cs">
+      <DependentUpon>Access.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ADUser.cs" />
+    <Compile Include="AnimatedSplashScreenWindow.xaml.cs">
+      <DependentUpon>AnimatedSplashScreenWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AutoStart.cs" />
+    <Compile Include="BindingString.cs" />
+    <Compile Include="BindingVariables.cs" />
+    <Compile Include="Converters\BoolToVisibleOrHidden.cs" />
+    <Compile Include="Commands.cs" />
+    <Compile Include="Converters\VisibleForTypeHost.cs" />
+    <Compile Include="Customer.Notes.cs" />
+    <Compile Include="MK.cs" />
+    <Compile Include="NewMainWindow.xaml.PopupMenu.cs" />
+    <Compile Include="CustomerAuxiliaryPaneItem.cs" />
+    <Compile Include="CustomerBase.cs" />
+    <Compile Include="CustomerLogic.cs" />
+    <Compile Include="Employee.cs" />
+    <Compile Include="EnterIPWindow.xaml.cs">
+      <DependentUpon>EnterIPWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ErrorToaster.xaml.cs">
+      <DependentUpon>ErrorToaster.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ExcelParsing.cs" />
+    <Compile Include="HotKey.cs" />
+    <Compile Include="IPAndName.cs" />
+    <Compile Include="Converters\IsEmptyConverter.cs" />
+    <Compile Include="ISpashScreen.cs" />
+    <Compile Include="ItemListBoxTask.cs" />
+    <Compile Include="Log.cs" />
+    <Compile Include="LogWriter.cs" />
+    <Compile Include="Microsoft\Shell\NativeMethods.cs" />
+    <Compile Include="Microsoft\Shell\ISingleInstanceApp.cs" />
+    <Compile Include="Microsoft\Shell\SingleInstance.cs" />
+    <Compile Include="Microsoft\Shell\WM.cs" />
+    <Compile Include="NewMainWindow.xaml.ButtonsPanel.cs" />
+    <Compile Include="NewMainWindow.xaml.NetworkTab.cs" />
+    <Compile Include="NewMainWindow.xaml.SSHScripts.cs" />
+    <Compile Include="NewMainWindow.xaml.Tabs.cs" />
+    <Compile Include="NewMainWindow.xaml.TSAD.cs" />
+    <Compile Include="NewMainWindow.xaml.VariaTab.cs" />
+    <Compile Include="NewMainWindow.xaml.SQL.cs" />
+    <Compile Include="NewMainWindow.xaml.SearchPanel.cs" />
+    <Compile Include="NewMainWindow.xaml.Pin.cs" />
+    <Compile Include="NewMainWindow.xaml.Notes.cs" />
+    <Compile Include="NewMainWindow.xaml.MRUTT.cs" />
+    <Compile Include="NewMainWindow.xaml.HotKeys.cs" />
+    <Compile Include="NewMainWindow.xaml.Credentials.cs" />
+    <Compile Include="NewMainWindow.xaml.CommonMethods.cs" />
+    <Compile Include="NewMainWindow.xaml.ControlsAndFilesTabHandling.cs" />
+    <Compile Include="NewMainWindow.xaml.DiagnosticsAndSettingsTab.cs" />
+    <Compile Include="MenuItemViewModel.cs" />
+    <Compile Include="Credential.cs" />
+    <Compile Include="Crypt.cs" />
+    <Compile Include="Customer.cs" />
+    <Compile Include="CustomerTypes.cs" />
+    <Compile Include="Host.cs" />
+    <Compile Include="IP.cs" />
+    <Compile Include="IpType.cs" />
+    <Compile Include="LoginsViewModel.cs" />
+    <Compile Include="MethodsTableFromSite.cs" />
+    <Compile Include="ModelBase.cs" />
+    <Compile Include="BindingListItem.cs" />
+    <Compile Include="InfoType.cs" />
+    <Compile Include="MRUTT.cs" />
+    <Compile Include="NativeMethods.cs" />
+    <Compile Include="NewMainWindow.xaml.cs">
+      <DependentUpon>NewMainWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="NewMainWindow.xaml.TSLogic.cs" />
+    <Compile Include="OpenSourceControls\ColorToBrushConverter.cs" />
+    <Compile Include="OpenSourceControls\SmallColorPicker.xaml.cs">
+      <DependentUpon>SmallColorPicker.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PasswordsMenuViewModel.cs" />
+    <Compile Include="PinnedTT.cs" />
+    <Compile Include="ProvInfo.cs" />
+    <Compile Include="RegionEnum.cs" />
+    <Compile Include="Settings.cs" />
+    <Compile Include="SettingsEvent.cs" />
+    <Compile Include="SettingsFields.cs" />
+    <Compile Include="SettingsWindow.xaml.cs">
+      <DependentUpon>SettingsWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SuccessToaster.xaml.cs">
+      <DependentUpon>SuccessToaster.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="TableFromSite.cs" />
+    <Compile Include="TimeSpanExtensions.cs" />
+    <Compile Include="ToasterAnimation.cs" />
+    <Compile Include="ToasterPosition.cs" />
+    <Compile Include="ToastManager.cs" />
+    <Compile Include="ToastSupport.cs" />
+    <Compile Include="ToastType.cs" />
+    <Compile Include="TSUser.cs" />
+    <Compile Include="TTEvent.cs" />
+    <Compile Include="OpenSourceControls\UserControlListViewHosts.xaml.cs">
+      <DependentUpon>UserControlListViewHosts.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WarningToaster.xaml.cs">
+      <DependentUpon>WarningToaster.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\SSHReportWindow.xaml.cs">
+      <DependentUpon>SSHReportWindow.xaml</DependentUpon>
+    </Compile>
+    <Page Include="Access.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AnimatedSplashScreenWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="DictionaryResApp.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="EnterIPWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ErrorToaster.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="NewMainWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="OpenSourceControls\SmallColorPicker.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Resources\Icons.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\IconsNonShared.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="SettingsWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SuccessToaster.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="OpenSourceControls\UserControlListViewHosts.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WarningToaster.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\SSHReportWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Resource Include="Resources\chrome32.png" />
+    <Resource Include="Resources\chromium.png" />
+    <Resource Include="Resources\chrome_firefox_32x32.png" />
+    <Resource Include="Resources\usb.png" />
+    <Content Include="SupportTools\LinuxScripts\linphone_inst.sh">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SupportTools\LinuxScripts\linphone_inst_lnk.sh">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Resource Include="Resources\linphone48x48.png" />
+    <Content Include="SupportTools\LinuxScripts\bench.sh">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SupportTools\LinuxScripts\DS_Benchmark.tar.gz">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SupportTools\LinuxScripts\copyInk.sh">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SupportTools\LinuxScripts\ibases.v8i">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Resource Include="Resources\WindowsIcons-license.txt" />
+    <Resource Include="Resources\Entypo-license.txt" />
+    <Resource Include="Resources\Elastix.jpg" />
+    <Resource Include="Resources\jira_128.png" />
+    <Resource Include="Resources\JIRA-128.png" />
+    <Resource Include="Resources\webcamera.png" />
+    <Resource Include="Resources\Reference.jpg" />
+    <Resource Include="Resources\mail.png" />
+    <Resource Include="Resources\History.png" />
+    <Resource Include="Resources\gnome_search_tool.png" />
+    <Resource Include="Resources\ADUsers.png" />
+    <Resource Include="Resources\TS.png" />
+    <Resource Include="Resources\TS1.png" />
+    <Resource Include="Resources\refresh.png" />
+    <Resource Include="Resources\help.png" />
+    <Resource Include="Resources\help1.png" />
+    <Content Include="html\help.files\filelist.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="html\help.files\sheet001.htm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="html\help.files\stylesheet.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="html\help.files\tabstrip.htm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="html\help.htm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="html\versions.files\image002.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="html\versions.htm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="html\versions.files\filelist.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="html\versions.files\sheet001.htm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="html\versions.files\stylesheet.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="html\versions.files\tabstrip.htm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="html\help.files\image001.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="html\versions.files\image001.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="html\help.files\image002.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="html\help.files\image004.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="html\help.files\image006.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="html\help.files\image008.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="html\help.files\image010.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="html\help.files\image012.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="html\help.files\image003.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="html\help.files\image005.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="html\help.files\image007.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="html\help.files\image009.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="html\help.files\image011.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="html\help.files\image013.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Resource Include="Resources\info.png" />
+    <Resource Include="Resources\power-restart.png" />
+    <Resource Include="Resources\clean_brush-48.png" />
+    <Resource Include="Resources\zabbix.jpg" />
+    <Resource Include="Resources\smart.png" />
+    <Resource Include="Resources\benchmark.png" />
+    <Content Include="SupportTools\cygwin1.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SupportTools\LinuxScripts\pdf1.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SupportTools\LinuxScripts\pdf2.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SupportTools\nbtscan.exe">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SupportTools\WinSCP.ru">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Resource Include="Resources\WinSCP16.ico" />
+    <Resource Include="Resources\WinSCP32.ico" />
+    <Resource Include="Resources\WinSCP48.ico" />
+    <Content Include="SupportTools\WinSCP.exe">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="html\help.xlsx" />
+    <None Include="html\versions.xlsx" />
+    <None Include="packages.config" />
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+    <Resource Include="Resources\Entypo.ttf" />
+    <Content Include="SupportTools\AD-enabled-users.ps1">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="SupportTools\LinuxFiles\1CWineComplect.scr">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <Content Include="SupportTools\WinSCP.com">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Resource Include="Resources\MikroTikGMS.png" />
+    <Resource Include="Resources\zabbix.png" />
+    <Resource Include="Resources\workitem_16xlg.png" />
+    <Content Include="SupportTools\mac.dat">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SupportTools\passvnc.credential">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 и x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\exit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\action_add_16xlg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\close_16xlg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\close32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\deletehs.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\networkmixnode_8709.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\networkpipes_16xlg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\networkpipes_32xlg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\fileclose.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\cancel-cross_512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\find_5650.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\vsnetwebservicedynamicdiscovery_8215.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\statusannotationshelp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Menu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\knowledge base1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\knowledgebase.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\knowledgebase2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\knowledgebase3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\knowledgebase4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\knowledgebase5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\knowledgebase6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\reference.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\folder_open_16xlg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\ds.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\computersystemproduct.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\copy_6524.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\imagelistcontrol_683.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\ping.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\ping32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\arp.png" />
+    <Resource Include="Resources\graph_highperformancecomputingchart_5170_16xlg.png" />
+    <Resource Include="Resources\graph_highperformancecomputingchart_5170_32xlg.png" />
+    <Resource Include="Resources\smile.png" />
+    <Resource Include="Resources\filteredobject_13400_16x.png" />
+    <Resource Include="Resources\error_red_16x16.png" />
+    <Resource Include="Resources\16icon.ico" />
+    <Resource Include="Resources\ip_.png" />
+    <Resource Include="Resources\logs32.png" />
+    <Resource Include="Resources\tvnviewer.ico" />
+    <Resource Include="Resources\tvnviewer1.ico" />
+    <Content Include="site.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SupportTools\tvnviewer.exe">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SupportTools\WinMTR.exe">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Resource Include="Resources\shell32_3_7_32x32x32.png" />
+    <Resource Include="Resources\pass_5360_16x16.png" />
+    <Resource Include="Resources\imageres_16x16.png" />
+    <Resource Include="Resources\putty16.png" />
+    <Resource Include="Resources\putty.png" />
+    <Resource Include="Resources\winbox48.png" />
+    <Resource Include="Resources\putty48.ico" />
+    <Resource Include="Resources\putty32.ico" />
+    <Resource Include="Resources\putty16.ico" />
+    <Resource Include="Resources\VNCVIEWER16X16.PNG" />
+    <Resource Include="Resources\VNCVIEWER.PNG" />
+    <Resource Include="Resources\VIEWEROVERLAY_2X.PNG" />
+    <Resource Include="Resources\expander_16xlg.png" />
+    <Resource Include="Resources\zimbradesktop-60x60.png" />
+    <Resource Include="Resources\Setting-Mikrotik.jpg" />
+    <Resource Include="Resources\QuickMoney.png" />
+    <Resource Include="Resources\zabbix-server.png" />
+    <Resource Include="Resources\MikroTik.png" />
+    <Resource Include="Resources\SMS-icon.png" />
+    <Resource Include="Resources\Network-Nas-icon.png" />
+    <Resource Include="Resources\QuerryCB.png" />
+    <Resource Include="Resources\phone.png" />
+    <Resource Include="Resources\web-camera-icon.png" />
+    <Resource Include="Resources\RDP.png" />
+    <Resource Include="Resources\wikipedia.png" />
+    <Resource Include="Resources\jira48.png" />
+    <Resource Include="Resources\gear_32xlg.png" />
+    <Resource Include="Resources\appicon.ico" />
+    <Resource Include="Resources\appicon_16.png" />
+    <Resource Include="Resources\appicon_32.png" />
+    <Resource Include="Resources\appicon_75.png" />
+    <Resource Include="Resources\appicon_128.png" />
+    <Resource Include="Resources\service.jpg" />
+    <Resource Include="Resources\service.png" />
+    <Resource Include="Resources\explorer.png" />
+    <Resource Include="Resources\explorer_17_32x32x32.png" />
+    <Resource Include="Resources\folder%28special%29_5843_16x.png" />
+    <Resource Include="Resources\folder_3_16x16.png" />
+    <Resource Include="Resources\folders_16x16x32.png" />
+    <Resource Include="Resources\folder_linux.png" />
+    <Resource Include="Resources\checklist_32x32.png" />
+    <Resource Include="Resources\silverlightapplication_11047.png" />
+    <Resource Include="Resources\activated_name.png" />
+    <Resource Include="Resources\activation_ready_name.png" />
+    <Resource Include="Resources\deactivated_name.png" />
+    <Resource Include="Resources\excel_32x32.gif" />
+    <Resource Include="Resources\documents.jpg" />
+    <Resource Include="Resources\letter.jpg" />
+    <Resource Include="Resources\ip.png" />
+    <Resource Include="Resources\web.gif" />
+    <Resource Include="Resources\web32x32.png" />
+    <Resource Include="Resources\msi16.png" />
+    <Resource Include="Resources\msi32.png" />
+    <Resource Include="Resources\1c82_48x48.png" />
+    <Resource Include="Resources\1C.png" />
+    <Resource Include="Resources\script_32xlg.png" />
+    <Resource Include="Resources\lock-icon.png" />
+    <Resource Include="Resources\unlock_lock.png" />
+    <Resource Include="Resources\environment_16xlg.png" />
+    <Resource Include="Resources\environment_32xlg.png" />
+    <Resource Include="Resources\pathping.png" />
+    <Resource Include="Resources\psexec.png" />
+    <Resource Include="Resources\tracert.png" />
+    <Resource Include="Resources\WinMTR.ico" />
+    <Content Include="SupportTools\FileZillaPortable.exe">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SupportTools\pageant.exe">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SupportTools\plink.exe">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SupportTools\pscp.exe">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SupportTools\psftp.exe">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SupportTools\putty.exe">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SupportTools\VNC-Viewer.exe">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SupportTools\winbox.exe">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>4</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>6</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

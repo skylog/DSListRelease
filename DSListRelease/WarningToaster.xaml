@@ -1,0 +1,45 @@
+﻿<Window x:Class="DSList.WarningToaster"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DSList"
+        mc:Ignorable="d"
+        
+     Title="WarningToast" Width="300" SizeToContent="Height" 
+        WindowStyle="None" AllowsTransparency="True" 
+        Background="#00FFFFFF" Window.ShowActivated="False" 
+        Window.Topmost="True" Window.ResizeMode="NoResize" 
+        Window.ShowInTaskbar="False" UIElement.Focusable="False">
+    <Grid Name="WarningToasterInstance" PreviewMouseUp="WarningToasterInstance_PreviewMouseUp">
+        <Border Border.BorderThickness="1" Border.Background="#FFFF9400">
+            <StackPanel FrameworkElement.Margin="5">
+                <DockPanel>
+                    <StackPanel FrameworkElement.VerticalAlignment="Center" FrameworkElement.Margin="5,0">
+                        <TextBlock TextBlock.FontSize="48" TextBlock.FontFamily="Global User Interface" TextBlock.Foreground="#FFFFFFFF">
+              <Bold>
+                ⚠
+              </Bold>
+                        </TextBlock>
+                    </StackPanel>
+                    <StackPanel>
+                        <DockPanel>
+                            <TextBlock TextBlock.TextWrapping="Wrap" FrameworkElement.Margin="5" TextBlock.Foreground="#FFFFFFFF" TextBlock.FontSize="14">
+                <Bold>
+                  <Run Name="TitleString" />
+                </Bold>
+                            </TextBlock>
+                        </DockPanel>
+                        <TextBlock TextBlock.TextWrapping="Wrap" FrameworkElement.Margin="5" TextBlock.Foreground="#FFFFFFFF">
+              <Run Name="MessageString" />
+                        </TextBlock>
+                    </StackPanel>
+                </DockPanel>
+            </StackPanel>
+        </Border>
+        <UIElement.RenderTransform>
+            <ScaleTransform ScaleTransform.ScaleY="1" />
+        </UIElement.RenderTransform>
+    </Grid>
+    </Window>
+

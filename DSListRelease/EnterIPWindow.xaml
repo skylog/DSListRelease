@@ -1,0 +1,42 @@
+﻿<Window x:Class="DSList.EnterIPWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DSList"
+        mc:Ignorable="d"
+        Title="EnterIPWindow"
+        Window.ResizeMode="NoResize" 
+        Window.WindowStartupLocation="CenterScreen" 
+        Window.SizeToContent="WidthAndHeight" 
+        Window.ShowInTaskbar="False" 
+        Control.Background="{DynamicResource {x:Static SystemColors.ControlBrushKey}}" >
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition RowDefinition.Height="Auto" />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <StackPanel>
+                <!--<TextBlock Margin="7" Text="В справочнике отсутствует IP адрес подсети для данной ТТ. Вы можете задать его вручную. Необходимо обратиться к ответственным лицам для добавления ТТ в базу НСИ." FrameworkElement.MaxWidth="310" TextBlock.TextWrapping="Wrap" />-->
+                <Grid FrameworkElement.Margin="7,0,7,7">
+                    <Grid.RowDefinitions>
+                        <RowDefinition />
+                        <RowDefinition />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Margin="7" Text="IP адрес подсети:" VerticalAlignment="Center" />
+                    <TextBlock Margin="7,0,7,7" Text="Маска подсети:" Grid.Row="1" VerticalAlignment="Center" />
+                    <TextBox Name="TextBoxIP" Margin="7" Grid.Column="1" Width="120" Height="23" Control.TabIndex="0" Control.VerticalContentAlignment="Center" KeyDown="TextBox_KeyDown" />
+                    <TextBox Name="TextBoxSM" Margin="7,0,7,7" Grid.Column="1" Grid.Row="1" Width="120" Height="23" Control.TabIndex="1" Control.VerticalContentAlignment="Center" VerticalAlignment="Bottom" KeyDown="TextBox_KeyDown" />
+                </Grid>
+            </StackPanel>
+            <StackPanel Grid.Row="1" VerticalAlignment="Bottom" FrameworkElement.HorizontalAlignment="Right" Orientation="Horizontal">
+                <Button Width="75" Height="23" Content="ОК" IsDefault="True" Control.TabIndex="3" Click="OK_Click" />
+                <Button Width="75" Height="23" Content="Отмена" Margin="7" IsCancel="True" Control.TabIndex="4" Click="Cancel_Click" />
+            </StackPanel>
+        </Grid>
+    </Window>
+

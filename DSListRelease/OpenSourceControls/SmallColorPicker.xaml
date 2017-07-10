@@ -1,0 +1,33 @@
+﻿<UserControl x:Class="DSList.OpenSourceControls.SmallColorPicker"
+             p1:UserControl.Name="ThisColorPicker" 
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:DSList.OpenSourceControls"
+             mc:Ignorable="d"
+             xmlns:p1="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+
+    <UserControl.Resources>
+        <local:ColorToBrushConverter x:Key="ColorToBrushConverter"/>
+    </UserControl.Resources>
+    <ComboBox Name="Picker" UIElement.SnapsToDevicePixels="True" Selector.SelectedValue="{Binding ElementName=ThisColorPicker,Path=SelectedColor}" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+        <ItemsControl.ItemTemplate>
+            <DataTemplate>
+                <Rectangle FrameworkElement.Width="16" 
+                           FrameworkElement.Height="16" 
+                           FrameworkElement.HorizontalAlignment="Center" 
+                           FrameworkElement.Margin="0 1 0 1" 
+                           Shape.Fill="{Binding Converter={StaticResource ColorToBrushConverter}}"
+                            />
+                
+            </DataTemplate>
+        </ItemsControl.ItemTemplate>
+        <ItemsControl.ItemsPanel>
+            <ItemsPanelTemplate>
+                <WrapPanel FrameworkElement.Width="111" FrameworkElement.Margin="0 2 0 2" />
+            </ItemsPanelTemplate>
+        </ItemsControl.ItemsPanel>
+    </ComboBox>
+</UserControl>
+ 

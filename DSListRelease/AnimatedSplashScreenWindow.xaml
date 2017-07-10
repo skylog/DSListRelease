@@ -1,0 +1,53 @@
+﻿<Window x:Class="DSList.AnimatedSplashScreenWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:Controls="http://metro.mahapps.com/winfx/xaml/controls"
+        
+        xmlns:local="clr-namespace:DSList"
+        mc:Ignorable="d"
+        Window.Title="DSList2" 
+        FrameworkElement.Height="250" 
+        FrameworkElement.Width="450" 
+        Control.Background="#FF0072C6" 
+        Control.Foreground="#FFFFFFFF" 
+        Window.ResizeMode="NoResize" 
+        Window.WindowStartupLocation="CenterScreen" 
+        Window.ShowInTaskbar="False" 
+        Window.WindowStyle="None" 
+        Window.Icon="/resources/vsnetwebservicedynamicdiscovery_8215.ico" 
+        Window.Topmost="True" 
+        AllowsTransparency="True"
+        BorderBrush="Transparent">
+    <Window.Resources>
+        <local:BoolToVisibleOrHidden x:Key="BoolToVisibleOrHidden"/>
+    </Window.Resources>
+    <Grid MouseLeftButtonDown="move">
+        <StackPanel StackPanel.Orientation="Horizontal" FrameworkElement.VerticalAlignment="Top">
+            <Image FrameworkElement.Margin="7" FrameworkElement.Width="24" FrameworkElement.Height="24" Image.Source="/resources/vsnetwebservicedynamicdiscovery_8215.ico" />
+            <TextBlock Name="Version" FrameworkElement.Margin="7" TextBlock.Foreground="#FFFFFFFF" TextBlock.FontFamily="Segoe UI Light" TextBlock.FontSize="16" />
+        </StackPanel>
+        <TextBlock FrameworkElement.Margin="7" TextBlock.Text="afedorenko@dengisrazy.ru" TextBlock.Foreground="#FFFFFFFF" TextBlock.FontSize="16" FrameworkElement.HorizontalAlignment="Right" FrameworkElement.VerticalAlignment="Bottom" />
+        <TextBlock TextBlock.Text="DSList" TextBlock.FontSize="38" FrameworkElement.HorizontalAlignment="Center" FrameworkElement.VerticalAlignment="Center" FrameworkElement.Margin="0,-50,0,0" />
+        <Controls:ProgressRing Name="Progress" p3:FrameworkElement.Margin="-4,80,0,0" p3:FrameworkElement.Height="4" p3:UIElement.IsEnabled="True" xmlns:p3="http://schemas.microsoft.com/winfx/2006/xaml/presentation"  />
+        <!--<PasswordBox Name="PassBox" Width="150" Height="30"  FrameworkElement.Margin="-4,80,0,0"/>
+        <TextBlock Foreground="DarkCyan" Text="Введите пароль" Padding="5" 
+                   Width="150" Height="30" FrameworkElement.Margin="-4,80,0,0"
+                   Visibility="{Binding Text.IsEmpty, Converter={StaticResource BoolToVisibleOrHidden}, ElementName=PassBox}" 
+                                       />-->
+        <TextBlock Name="Status" TextBlock.Text="Инициализация..." FrameworkElement.VerticalAlignment="Bottom" FrameworkElement.Margin="7" TextBlock.Foreground="#FFB1D6F0" />
+        <TextBlock FrameworkElement.ToolTip="Отмена" TextBlock.FontSize="20"  HorizontalAlignment="Right" FrameworkElement.VerticalAlignment="Top" FrameworkElement.Margin="0,0,8,0" TextBlock.Text="×" FrameworkElement.Cursor="Hand" MouseDown="SplashClose_MouseLeftButtonUp">
+      <FrameworkElement.Style>
+        <Style Style.TargetType="{x:Type TextBlock}">
+          <Setter Setter.Property="TextBlock.Foreground" Setter.Value="#FFFFFFFF" />
+          <Style.Triggers>
+            <Trigger Trigger.Property="UIElement.IsMouseOver" Trigger.Value="True">
+              <Setter Setter.Property="TextBlock.Foreground" Setter.Value="#FFB1D6F0" />
+            </Trigger>
+          </Style.Triggers>
+        </Style>
+      </FrameworkElement.Style>
+        </TextBlock>
+    </Grid>
+</Window>
