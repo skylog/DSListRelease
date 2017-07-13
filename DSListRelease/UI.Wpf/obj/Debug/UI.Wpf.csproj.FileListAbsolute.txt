@@ -1,0 +1,13 @@
+D:\DevProjects\GIT\DSListRelease\DSListRelease\UI.Wpf\bin\Debug\UI.Wpf.exe.config
+D:\DevProjects\GIT\DSListRelease\DSListRelease\UI.Wpf\bin\Debug\UI.Wpf.exe
+D:\DevProjects\GIT\DSListRelease\DSListRelease\UI.Wpf\bin\Debug\UI.Wpf.pdb
+D:\DevProjects\GIT\DSListRelease\DSListRelease\UI.Wpf\obj\Debug\View\MainWindow.g.cs
+D:\DevProjects\GIT\DSListRelease\DSListRelease\UI.Wpf\obj\Debug\App.g.cs
+D:\DevProjects\GIT\DSListRelease\DSListRelease\UI.Wpf\obj\Debug\UI.Wpf_MarkupCompile.cache
+D:\DevProjects\GIT\DSListRelease\DSListRelease\UI.Wpf\obj\Debug\UI.Wpf_MarkupCompile.lref
+D:\DevProjects\GIT\DSListRelease\DSListRelease\UI.Wpf\obj\Debug\View\MainWindow.baml
+D:\DevProjects\GIT\DSListRelease\DSListRelease\UI.Wpf\obj\Debug\UI.Wpf.g.resources
+D:\DevProjects\GIT\DSListRelease\DSListRelease\UI.Wpf\obj\Debug\UI.Wpf.Properties.Resources.resources
+D:\DevProjects\GIT\DSListRelease\DSListRelease\UI.Wpf\obj\Debug\UI.Wpf.csproj.GenerateResource.Cache
+D:\DevProjects\GIT\DSListRelease\DSListRelease\UI.Wpf\obj\Debug\UI.Wpf.exe
+D:\DevProjects\GIT\DSListRelease\DSListRelease\UI.Wpf\obj\Debug\UI.Wpf.pdb

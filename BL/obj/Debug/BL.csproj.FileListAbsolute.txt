@@ -1,0 +1,5 @@
+D:\DevProjects\GIT\DSListRelease\BL\bin\Debug\BL.exe.config
+D:\DevProjects\GIT\DSListRelease\BL\bin\Debug\BL.exe
+D:\DevProjects\GIT\DSListRelease\BL\bin\Debug\BL.pdb
+D:\DevProjects\GIT\DSListRelease\BL\obj\Debug\BL.exe
+D:\DevProjects\GIT\DSListRelease\BL\obj\Debug\BL.pdb

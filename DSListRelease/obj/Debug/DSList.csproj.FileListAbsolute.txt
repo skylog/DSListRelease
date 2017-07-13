@@ -269,3 +269,6 @@ C:\Samples\DSList\DSList\Repos\DSListRelease\DSListRelease\obj\Debug\DSList.cspr
 C:\Samples\DSList\DSList\Repos\DSListRelease\DSListRelease\obj\Debug\DSList.TrustInfo.xml
 C:\Samples\DSList\DSList\Repos\DSListRelease\DSListRelease\obj\Debug\DSList.exe.manifest
 C:\Samples\DSList\DSList\Repos\DSListRelease\DSListRelease\obj\Debug\DSList.application
+D:\DevProjects\GIT\DSListRelease\DSListRelease\obj\Debug\DSList.csprojResolveAssemblyReference.cache
+D:\DevProjects\GIT\DSListRelease\DSListRelease\obj\Debug\DSList.exe
+D:\DevProjects\GIT\DSListRelease\DSListRelease\obj\Debug\DSList.pdb
