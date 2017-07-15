@@ -1,0 +1,527 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="DSList.Access" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="19.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAABAAAAAIAAA=</HashCode>
+      <FileName>Access.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="DSList.ADUser" Collapsed="true">
+    <Position X="21.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAACIAACCgAQAAkAAAQgAAAgAEAAEAAAAQBAgEABAQ=</HashCode>
+      <FileName>ADUser.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DSList.AnimatedSplashScreenWindow" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="23" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAgAAAAAAQACAQAQQAAAAAAAACAAAQAABAAAAAIA=</HashCode>
+      <FileName>AnimatedSplashScreenWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="DSList.App" Collapsed="true">
+    <Position X="24.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IQAAAAAAAAAAAAAAAAAAAAABAAAAAAACAAAAAACAAIA=</HashCode>
+      <FileName>App.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DSList.AutoStart" Collapsed="true">
+    <Position X="26.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAACAAAAABAAAAAAAAAAAAABAAAAAAAAAAA=</HashCode>
+      <FileName>AutoStart.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DSList.BindingListItem" Collapsed="true">
+    <Position X="28.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAAAgAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>BindingListItem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DSList.BindingString" Collapsed="true">
+    <Position X="30" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>BindingString.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DSList.BindingVariables" Collapsed="true">
+    <Position X="12.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ECAAIwAgQgACAAIAAAAAACIEAAAEEAAAgQAAAAQQAAA=</HashCode>
+      <FileName>BindingVariables.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DSList.Commands" Collapsed="true">
+    <Position X="23" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QNIUA8gKAABQEJAgAQEBBggAAeQEAEAAAdLMCABAMAA=</HashCode>
+      <FileName>Commands.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DSList.BoolToVisibleOrHidden" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="19.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAIAAAAAAAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Converters\BoolToVisibleOrHidden.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="DSList.IsEmptyConverter" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="28.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAIAAAAAAAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Converters\IsEmptyConverter.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="DSList.VisibleForTypeHost" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="23" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAIAAAAAAAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Converters\VisibleForTypeHost.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="DSList.Credential" Collapsed="true">
+    <Position X="24.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAgAAAAAAAAAAAAAAAAAAAAAACAAAQAAAAARA=</HashCode>
+      <FileName>Credential.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DSList.Crypt" Collapsed="true">
+    <Position X="26.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAAAAAQAAAAAIBAAAAAAAACAAAAAAAAAAA=</HashCode>
+      <FileName>Crypt.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DSList.Customer">
+    <Position X="0.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAkgAAAAAAAIAAAAAAQAAAQAAAAAABAAQAEAAIBAAg=</HashCode>
+      <FileName>Customer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DSList.CustomerAuxiliaryPaneItem" Collapsed="true">
+    <Position X="28.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAADAAAIAgAAEAAAAAAAAAAAAAAAAAAAACAACAAA=</HashCode>
+      <FileName>CustomerAuxiliaryPaneItem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DSList.CustomerBase">
+    <Position X="5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>YgxARACEwCIVhoQciUXKpEKLjA3iQAHCZCCwaljAMAQ=</HashCode>
+      <FileName>CustomerBase.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="DSList.CustomerLogic">
+    <Position X="2.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAiUACAAQQQAAAAAIAAwAAICAABJACAABgAAAAAA=</HashCode>
+      <FileName>CustomerLogic.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DSList.Employee" Collapsed="true">
+    <Position X="30" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAgAAAgAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Employee.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DSList.EnterIPWindow" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="19.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAAAABAAAAAAAAAAACAAAAgAAAAAAAAAAAAA=</HashCode>
+      <FileName>EnterIPWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="DSList.ErrorToaster" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="21.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAIAAAEAAAAAAAAAABAAA=</HashCode>
+      <FileName>ErrorToaster.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="DSList.ExcelParsing" Collapsed="true">
+    <Position X="23" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAoAAAAAAAAAAAAAAAAAAAAAAAIAABA=</HashCode>
+      <FileName>ExcelParsing.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DSList.Host" Collapsed="true">
+    <Position X="5.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAACAACAAGCAAJEAAAAAAABCAAABAAgoARAICASA=</HashCode>
+      <FileName>Host.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DSList.Hotkey" Collapsed="true">
+    <Position X="10.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAAgAAAgACAAABBCAIgAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>HotKey.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DSList.IP" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="24.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAEAACghAAsAIAEGECoiAAAgAAgAAAMAQQAIgICBCA=</HashCode>
+      <FileName>IP.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="DSList.IPAndName" Collapsed="true">
+    <Position X="26.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAIEAAABAAAAAAAAAAAAAAAAAACAAgAAgAAAAAAAA=</HashCode>
+      <FileName>IPAndName.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DSList.ItemListBoxTask" Collapsed="true">
+    <Position X="3.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAJAAAAAAIgAAIAARgAAAAAAAAAgAAkAAYAEADAAAA=</HashCode>
+      <FileName>ItemListBoxTask.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DSList.Log" Collapsed="true">
+    <Position X="30" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAACAAACAAAAAAAAAAAAAAAAAAAAIAAAAAA=</HashCode>
+      <FileName>Log.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DSList.LoginsViewModel" Collapsed="true">
+    <Position X="8" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAACAAAEACAEAAAAAAAAAEAAACAAAQAAAACAA=</HashCode>
+      <FileName>LoginsViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DSList.LogWriter" Collapsed="true">
+    <Position X="19.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAQAAAAAAAAQAAIAAAAAAAgAQIBAAAgAQAAAAAAAABA=</HashCode>
+      <FileName>LogWriter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DSList.MenuItemViewModel" Collapsed="true">
+    <Position X="21.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAIAAAAQA=</HashCode>
+      <FileName>MenuItemViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DSList.MethodsTableFromSite" Collapsed="true">
+    <Position X="23" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAIAAAECAQAAAAAAAAAAAAAAAAAAAAAAAAgAAAA=</HashCode>
+      <FileName>MethodsTableFromSite.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DSList.MK" Collapsed="true">
+    <Position X="24.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAAAAAAAEABAQAgAgAAAAAAAAAQAACAAAA=</HashCode>
+      <FileName>MK.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DSList.ModelBase" Collapsed="true">
+    <Position X="9" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAIAAAAAAAAAAgAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ModelBase.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="DSList.MRUTT" Collapsed="true">
+    <Position X="1.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAgIAQAAAAAAAgAAAAAACAAAQA=</HashCode>
+      <FileName>MRUTT.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DSList.NativeMethods" Collapsed="true">
+    <Position X="26.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AoABCIAAgAAAAEhBAAAACCQAAAEAAAAAwQBEAgggKBQ=</HashCode>
+      <FileName>NativeMethods.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DSList.NewMainWindow" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="30" Y="3.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="DSList.NewMainWindow.MFU" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>NewMainWindow.xaml.VariaTab.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>h3+Pa/vpfbt//9t7fjfVptu620utr1y7r9/O/7s+rp4=</HashCode>
+      <FileName>NewMainWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="DSList.PasswordsMenuViewModel" Collapsed="true">
+    <Position X="19.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>PasswordsMenuViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DSList.PinnedTT" Collapsed="true">
+    <Position X="14.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAEAABAAAAAAAAgIAQAAAAIAAgIAAAQgAACAAA=</HashCode>
+      <FileName>PinnedTT.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DSList.ProvInfo" Collapsed="true">
+    <Position X="17" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>YAAAAAAEAAAAgIBIAAIAYAAoQQAIAAgCiQAQBkAAAAA=</HashCode>
+      <FileName>ProvInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DSList.Settings" Collapsed="true">
+    <Position X="23" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAgAAIAgAAAAAAAAAgAAAAAAAACAAAAAgAA=</HashCode>
+      <FileName>Settings.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DSList.SettingsFields" Collapsed="true">
+    <Position X="26.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAACEAoAgGAAGAIlAAIACAIEAgABABACAgQSAAIAA=</HashCode>
+      <FileName>SettingsFields.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DSList.SettingsWindow" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="28.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQ0SAACAAAAAECAAAACgAEAAAAgEAAABAQJAAAEA=</HashCode>
+      <FileName>SettingsWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="DSList.SuccessToaster" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="23" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>SuccessToaster.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="DSList.TableFromSite" Collapsed="true">
+    <Position X="24.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEEAAAAAAAAAAAAABAAACAYAAIAAAAAAAAAABAIAAQ=</HashCode>
+      <FileName>TableFromSite.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DSList.TimeSpanExtensions" Collapsed="true">
+    <Position X="26.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAA=</HashCode>
+      <FileName>TimeSpanExtensions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DSList.ToastManager" Collapsed="true">
+    <Position X="28.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAAAAAAAAIIAEEQAAAAACAAAAAAABAAA=</HashCode>
+      <FileName>ToastManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DSList.ToastSupport" Collapsed="true">
+    <Position X="30" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAgAAAAAAEAAAAAAAgAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ToastSupport.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DSList.TSUser" Collapsed="true">
+    <Position X="19.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAIAAAAAQAMAAIAAAAIgAgAARIAAwiFQkAAIAE=</HashCode>
+      <FileName>TSUser.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DSList.WarningToaster" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="24.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAABAAABAAA=</HashCode>
+      <FileName>WarningToaster.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Microsoft.Shell.NativeMethods" Collapsed="true">
+    <Position X="28.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAEAAAAAABAA=</HashCode>
+      <FileName>Microsoft\Shell\NativeMethods.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.Shell.SingleInstance&lt;TApplication&gt;" Collapsed="true">
+    <Position X="30" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAEAAAEAEAIRAAIAAQAAAAEAABAAEAAARAAEAAAAA=</HashCode>
+      <FileName>Microsoft\Shell\SingleInstance.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DSList.OpenSourceControls.ColorToBrushConverter" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="21.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAIAAAAAAAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>OpenSourceControls\ColorToBrushConverter.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="DSList.OpenSourceControls.SmallColorPicker" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="19.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgQAACAAAAAgAIACAAAAAAAAACIAAAEAAAAAARAAAA=</HashCode>
+      <FileName>OpenSourceControls\SmallColorPicker.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="DSList.OpenSourceControls.UserControlListViewHosts" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="21.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>OpenSourceControls\UserControlListViewHosts.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="DSList.Properties.Resources" Collapsed="true">
+    <Position X="21.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>YEYTIPsiNZyRkCoyxPCF0RlsvyJszXxgfnUiBK1DeNE=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DSList.Properties.Settings" Collapsed="true">
+    <Position X="24.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAJAAAAAAAAgAAAAAAAAIAAAAAABAAEAAAIAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DSList.Windows.SSHReportWindow" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="21.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAABAQAAA=</HashCode>
+      <FileName>Windows\SSHReportWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Interface Name="DSList.ISplashScreen" Collapsed="true">
+    <Position X="21.25" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAAAAAAAQAQAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ISpashScreen.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Microsoft.Shell.ISingleInstanceApp" Collapsed="true">
+    <Position X="19.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Microsoft\Shell\ISingleInstanceApp.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="DSList.CustomerTypes" Collapsed="true">
+    <Position X="19.5" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAAAAAAAAAAAAAIAAAAAAAAAAAAAAIAAABAAA=</HashCode>
+      <FileName>CustomerTypes.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="DSList.InfoType" Collapsed="true">
+    <Position X="21.25" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>InfoType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="DSList.IPType" Collapsed="true">
+    <Position X="23" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEEAAgAAAAAAAAAAQAAgAAAAAABAIAAAAEEAEAAAA=</HashCode>
+      <FileName>IpType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="DSList.RegionEnum" Collapsed="true">
+    <Position X="24.75" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAEAAEgAAAAAEAQAAAAAAgAAAAAAACAAABAFAAAAI=</HashCode>
+      <FileName>RegionEnum.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="DSList.ToasterAnimation" Collapsed="true">
+    <Position X="26.5" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAgCAAAAAAAAEAAIACAAAAAAAAECAACAAAAA=</HashCode>
+      <FileName>ToasterAnimation.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="DSList.ToasterPosition" Collapsed="true">
+    <Position X="28.25" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQICAAAAAAAQAAAIAAEAAQIAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ToasterPosition.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="DSList.ToastType" Collapsed="true">
+    <Position X="30" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAQAAAAAAABAAAgAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ToastType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Microsoft.Shell.WM" Collapsed="true">
+    <Position X="19.5" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>08ECgSVMcgBGiiAABCICSCDuaoqAAL1BEIwRAGUSB8w=</HashCode>
+      <FileName>Microsoft\Shell\WM.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Delegate Name="DSList.UpdateProgressBarDelegate">
+    <Position X="23" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAgA=</HashCode>
+      <FileName>NewMainWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="DSList.SettingsEvent" Collapsed="true">
+    <Position X="19.5" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SettingsEvent.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="DSList.TTEvent" Collapsed="true">
+    <Position X="21.25" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>TTEvent.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
