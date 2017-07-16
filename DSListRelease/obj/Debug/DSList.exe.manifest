@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
-  <asmv1:assemblyIdentity name="DSList.exe" version="0.1.0.78" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
+  <asmv1:assemblyIdentity name="DSList.exe" version="0.1.0.79" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
   <description asmv2:iconFile="Resources\vsnetwebservicedynamicdiscovery_8215.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <application />
   <entryPoint>
@@ -156,14 +156,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="DSList.exe" size="4207000">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="DSList.exe" size="4199936">
       <assemblyIdentity name="DSList" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>9Kr56/wUYww3SeSWuOHkFYZkYdQAGaVwMEKQY12Gb50=</dsig:DigestValue>
+        <dsig:DigestValue>BzrMnO9QJt4ZVHzDwkA/l72QyeAJ3VAgbOFf7CIjTaE=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -554,13 +554,13 @@
       <dsig:DigestValue>qLpZOZCCuPe1sSqjpfFplEItik1sYMVslo8NCxpSaSo=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="site.html" size="136127">
+  <file name="site.html" size="136882">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>Qx50/rFQUj1jxFYrmews+AfSsMC6zhwqMNXFrK2gMeo=</dsig:DigestValue>
+      <dsig:DigestValue>eEw5ZkarnDNf9lq3vuCqy07HUeOOAdOzbju56wP7PKk=</dsig:DigestValue>
     </hash>
   </file>
   <file name="SupportTools\AD-enabled-users.ps1" size="1676">
@@ -590,22 +590,22 @@
       <dsig:DigestValue>CJQ4UrA4i8M7wQTetFV6ZuZ5E7OKcdvqL62k7zamQ/E=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="SupportTools\LinuxScripts\bench.sh" size="623">
+  <file name="SupportTools\LinuxScripts\bench.sh" size="647">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>jRUl7Skocr8ryTc+pBFsMFihBGAP3OQhTz70KWxA7ss=</dsig:DigestValue>
+      <dsig:DigestValue>f856Teh9Oz8RUGAlvWVspSg/BKZqmiKEb1LVxwJrUBM=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="SupportTools\LinuxScripts\copyInk.sh" size="193">
+  <file name="SupportTools\LinuxScripts\copyInk.sh" size="198">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>WSVpPhkyhFVBGolGCFMISXw7jBCiwxvxL8Q5RQowBOE=</dsig:DigestValue>
+      <dsig:DigestValue>LpxyeKhT8tEPFAY6sw7MeFiZNTK7Gpeh8piAYL+/uTE=</dsig:DigestValue>
     </hash>
   </file>
   <file name="SupportTools\LinuxScripts\DS_Benchmark.tar.gz" size="713538">
@@ -626,22 +626,22 @@
       <dsig:DigestValue>qD+hyU+VgNQHHEqsVuWs5SCbtLn5JRX2R4X0tHV4R5U=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="SupportTools\LinuxScripts\linphone_inst.sh" size="965">
+  <file name="SupportTools\LinuxScripts\linphone_inst.sh" size="993">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>fGqH871J6MuWeBZikepS1enVgan0kgpIQpCrEqN3K08=</dsig:DigestValue>
+      <dsig:DigestValue>olL6255hmvbKDf1rMU7mK1BAFO60gRko3ndl76FCY6Q=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="SupportTools\LinuxScripts\linphone_inst_lnk.sh" size="347">
+  <file name="SupportTools\LinuxScripts\linphone_inst_lnk.sh" size="354">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>uLBY/m7KZ4ku00axRFSLDi42Oh+DzIOSTBWgnxpD0oU=</dsig:DigestValue>
+      <dsig:DigestValue>VgbrfU8iy/qX30u3MGSqC09DQ2upRKdyu7htagDk0L0=</dsig:DigestValue>
     </hash>
   </file>
   <file name="SupportTools\LinuxScripts\pdf1.txt" size="84">
