@@ -1,0 +1,33 @@
+﻿[ДеньгиСразу Россия]
+Connect=Srvr="SRV-1C";Ref="main_1c_ru";
+ID=99dbff15-bf6a-4b13-b048-98ea19a83851
+OrderInList=16384
+Folder=/
+OrderInTree=256
+External=0
+ClientConnectionSpeed=Normal
+App=Auto
+WA=1
+Version=8.2
+[ДеньгиСразу Тестовая]
+Connect=Srvr="SRV-1C";Ref="main_1c_test";
+ID=ed6f836d-fa9b-4b8e-a618-2b17f98f3bce
+OrderInList=32768
+Folder=/
+OrderInTree=16384
+External=0
+ClientConnectionSpeed=Normal
+App=Auto
+WA=1
+Version=8.2]
+[Деньги Сразу Россия (Основной проект)]
+Connect=Srvr="SRV-1C";Ref="ut_op_main";
+ID=f70ae00f-6402-4636-b370-80f848a8e06f
+OrderInList=24576
+Folder=/
+OrderInTree=32768
+External=0
+ClientConnectionSpeed=Normal
+App=Auto
+WA=1
+Version=8.2

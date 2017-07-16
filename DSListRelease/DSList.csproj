@@ -16,7 +16,7 @@
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <IsWebBootstrapper>false</IsWebBootstrapper>
     <TargetFrameworkProfile />
-    <PublishUrl>\\Vmwindows7pro\общая\</PublishUrl>
+    <PublishUrl>\\nas.dengisrazy.ru\IT\DSList\Install\testinstall\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Unc</InstallFrom>
     <UpdateEnabled>true</UpdateEnabled>
@@ -26,13 +26,15 @@
     <UpdatePeriodically>true</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <InstallUrl>\\Vmwindows7pro\общая\</InstallUrl>
-    <UpdateUrl>\\nas.dengisrazy.ru\it\DSList\Install\</UpdateUrl>
+    <InstallUrl>\\nas.dengisrazy.ru\IT\DSList\Install\testinstall\</InstallUrl>
+    <UpdateUrl>\\nas.dengisrazy.ru\IT\DSList\Install\testinstall\</UpdateUrl>
     <ProductName>DSList</ProductName>
     <PublisherName>afedorenko</PublisherName>
     <SuiteName>DSList</SuiteName>
     <MinimumRequiredVersion>0.0.0.1</MinimumRequiredVersion>
-    <ApplicationRevision>79</ApplicationRevision>
+    <WebPage>publish.htm</WebPage>
+    <OpenBrowserOnPublish>false</OpenBrowserOnPublish>
+    <ApplicationRevision>83</ApplicationRevision>
     <ApplicationVersion>0.1.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>
@@ -66,7 +68,7 @@
     </Win32Resource>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestCertificateThumbprint>D46D62032D91343A0B46B73CE07683696A51A497</ManifestCertificateThumbprint>
+    <ManifestCertificateThumbprint>6C32C871747C1F0406F72A6EDA4E6426E20A1873</ManifestCertificateThumbprint>
   </PropertyGroup>
   <PropertyGroup>
     <ManifestKeyFile>DSList_1_TemporaryKey.pfx</ManifestKeyFile>
@@ -75,7 +77,7 @@
     <GenerateManifests>true</GenerateManifests>
   </PropertyGroup>
   <PropertyGroup>
-    <SignManifests>false</SignManifests>
+    <SignManifests>true</SignManifests>
   </PropertyGroup>
   <PropertyGroup>
     <TargetZone>LocalIntranet</TargetZone>
@@ -87,6 +89,12 @@
   </PropertyGroup>
   <PropertyGroup>
     <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>DSList_1_TemporaryKey.pfx</AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="AngleSharp, Version=0.9.9.0, Culture=neutral, PublicKeyToken=e83494dcdc6d31ea, processorArchitecture=MSIL">
@@ -547,6 +555,8 @@
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <None Include="ClassDiagram1.cd" />
+    <None Include="DSList_1_TemporaryKey.pfx" />
+    <None Include="DSList_TemporaryKey.pfx" />
     <None Include="html\help.xlsx" />
     <None Include="html\versions.xlsx" />
     <None Include="packages.config" />
