@@ -81,28 +81,28 @@ namespace DSList
 
         public async void DownloadXLSXProvidersFile()
         {
-            await Task.Run(() =>
-            {
-                try
-                {
-                    ExcelParsing newExcelFile = new ExcelParsing("1.xlsx");
-                    newExcelFile.ParseXLSX();
-                    System.Windows.Clipboard.SetDataObject(newExcelFile.DTFromXLSX);
-                    //Window newWin = new Window();
-                    //System.Windows.Controls.DataGrid DG = new System.Windows.Controls.DataGrid();
-                    //DataGridView DGV = new DataGridView();
-                    //DGV.DataSource = newExcelFile.DTFromXLSX;
-                    //DG.ItemsSource =
-                    //newWin.Content = DGV;
+            //await Task.Run(() =>
+            //{
+            //    try
+            //    {
+            //        ExcelParsing newExcelFile = new ExcelParsing("1.xlsx");
+            //        newExcelFile.ParseXLSX();
+            //        System.Windows.Clipboard.SetDataObject(newExcelFile.DTFromXLSX);
+            //        //Window newWin = new Window();
+            //        //System.Windows.Controls.DataGrid DG = new System.Windows.Controls.DataGrid();
+            //        //DataGridView DGV = new DataGridView();
+            //        //DGV.DataSource = newExcelFile.DTFromXLSX;
+            //        //DG.ItemsSource =
+            //        //newWin.Content = DGV;
 
 
-                }
-                catch (Exception ex)
-                {
-                    Log(ex.Message, true, true, ex.StackTrace);
-                }
+            //    }
+            //    catch (Exception ex)
+            //    {
+            //        Log(ex.Message, true, true, ex.StackTrace);
+            //    }
 
-            });
+            //});
         }
 
         private void ClickTest_Executed(object sender, ExecutedRoutedEventArgs e)
